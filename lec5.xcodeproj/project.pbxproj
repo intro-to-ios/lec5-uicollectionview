@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		2E0834162A3573FF0010FE29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0834142A3573FF0010FE29 /* LaunchScreen.storyboard */; };
 		2E0834222A3581EF0010FE29 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0834212A3581EF0010FE29 /* Bird.swift */; };
 		2E0834242A3582290010FE29 /* BirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0834232A3582290010FE29 /* BirdCollectionViewCell.swift */; };
+		693CFD062F7219110065BE33 /* BirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693CFD052F7219110065BE33 /* BirdDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2E0834172A3573FF0010FE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0834212A3581EF0010FE29 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		2E0834232A3582290010FE29 /* BirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		693CFD052F7219110065BE33 /* BirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				2E08340D2A3573FE0010FE29 /* ViewController.swift */,
+				693CFD052F7219110065BE33 /* BirdDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693CFD062F7219110065BE33 /* BirdDetailViewController.swift in Sources */,
 				2E08340E2A3573FE0010FE29 /* ViewController.swift in Sources */,
 				2E08340A2A3573FE0010FE29 /* AppDelegate.swift in Sources */,
 				2E0834222A3581EF0010FE29 /* Bird.swift in Sources */,

@@ -9,10 +9,10 @@
 import UIKit
 
 class BirdDetailViewController: UIViewController {
+    
     // MARK: - Properties (view)
     
     // MARK: - Properties (data)
-    
     
     // MARK: - init
     
@@ -23,7 +23,6 @@ class BirdDetailViewController: UIViewController {
     
     
     // MARK: - Helper
-    
     
     // MARK: - Button Action
    

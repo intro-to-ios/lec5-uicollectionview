@@ -125,8 +125,5 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     }
 
     // TODO: add cell tap handling function
-    func collectionView(_ collectionView: UICollectionView,
-                        didSelectItemAt indexPath: IndexPath) {
-        
-    }
+
 }

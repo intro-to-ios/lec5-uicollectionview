@@ -26,10 +26,7 @@ class BirdDetailViewController: UIViewController {
     
     
     // MARK: - Button Action
-    @objc private func didTapFavorite() {
-        
-        
-    }
+   
 }
 
 

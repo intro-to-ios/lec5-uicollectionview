@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// add heart icon to the cell
 // NOTE: `UICollectionViewCell` instead of `UITableViewCell`
 class BirdCollectionViewCell: UICollectionViewCell {
     
@@ -14,6 +14,7 @@ class BirdCollectionViewCell: UICollectionViewCell {
     
     private let birdImage = UIImageView()
     private let birdNameLabel = UILabel()
+    private let heartIcon = UIImageView()
     
     static let reuse = "BirdCollectionViewCellReuse"
     
@@ -25,6 +26,7 @@ class BirdCollectionViewCell: UICollectionViewCell {
         
         setupBirdImage()
         setupNameLabel()
+        setupHeartIcon()
     }
     
     required init?(coder: NSCoder) {
@@ -37,6 +39,7 @@ class BirdCollectionViewCell: UICollectionViewCell {
         // Don't make private!
         birdImage.image = UIImage(named: bird.image)
         birdNameLabel.text = bird.name
+        heartIcon.isHidden = !bird.isFavorited
     }
     
     // MARK: - Set Up Views
@@ -67,6 +70,22 @@ class BirdCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             birdNameLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             birdNameLabel.topAnchor.constraint(equalTo: birdImage.bottomAnchor, constant: 4)
+        ])
+    }
+    
+    private func setupHeartIcon() {
+        heartIcon.image = UIImage(systemName: "heart.fill")
+        heartIcon.tintColor = .systemRed
+        heartIcon.isHidden = true
+        
+        contentView.addSubview(heartIcon)
+        heartIcon.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            heartIcon.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
+            heartIcon.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+            heartIcon.widthAnchor.constraint(equalToConstant: 24),
+            heartIcon.heightAnchor.constraint(equalToConstant: 24)
         ])
     }
     

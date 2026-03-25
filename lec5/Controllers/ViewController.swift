@@ -131,7 +131,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         let detailVC = BirdDetailViewController(bird: bird)
         
         // set the delegate when pushing
-        
+        detailVC.delegate = self
         navigationController?.pushViewController(detailVC, animated: true)
         
     }
@@ -139,3 +139,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
 
 // conform to he protocol
+extension ViewController: BirdDetailDelegate {
+    func didToggleFavorite(for bird: Bird) {
+        if let index = birds.firstIndex(where: {$0.name == bird.name}) {
+            birds[index].isFavorited = bird.isFavorited
+            collectionView.reloadItems(at: [IndexPath(item: index, section: 0)])
+        }
+    }
+}
+

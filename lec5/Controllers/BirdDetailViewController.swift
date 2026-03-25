@@ -16,7 +16,9 @@ class BirdDetailViewController: UIViewController {
     private let birdNameLabel = UILabel()
     private let favoriteButton = UIButton()
     
-    // add the delegate
+    // add the delegate property
+    
+    weak var delegate: BirdDetailDelegate?
     
     // MARK: - Properties (data)
     
@@ -129,9 +131,13 @@ class BirdDetailViewController: UIViewController {
         bird.isFavorited.toggle()
         updateFavoriteButton()
         
-        // call the delegate
+        // notify the delegate
+        delegate?.didToggleFavorite(for: bird)
     }
    
 }
 
 // Make a protocol
+protocol BirdDetailDelegate: AnyObject {
+    func didToggleFavorite(for bird: Bird)
+}

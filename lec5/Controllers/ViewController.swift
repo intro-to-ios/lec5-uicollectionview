@@ -125,5 +125,11 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     }
 
     // TODO: add cell tap handling function
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let bird = birds[indexPath.row]
+        let detailVC = BirdDetailViewController(bird: bird)
+        navigationController?.pushViewController(detailVC, animated: true)
+        
+    }
 }

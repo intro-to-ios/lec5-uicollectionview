@@ -129,7 +129,13 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         
         let bird = birds[indexPath.row]
         let detailVC = BirdDetailViewController(bird: bird)
+        
+        // set the delegate when pushing
+        
         navigationController?.pushViewController(detailVC, animated: true)
         
     }
 }
+
+
+// conform to he protocol

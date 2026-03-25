@@ -16,7 +16,7 @@ class BirdDetailViewController: UIViewController {
     private let birdNameLabel = UILabel()
     private let favoriteButton = UIButton()
     
-    // add the delegate
+    // TODO: 2. add the delegate property
     
     // MARK: - Properties (data)
     
@@ -129,9 +129,9 @@ class BirdDetailViewController: UIViewController {
         bird.isFavorited.toggle()
         updateFavoriteButton()
         
-        // call the delegate
+        // TODO: 3. Call the delegate
     }
    
 }
 
-// Make a protocol
+// TODO: 1. Define the protocol

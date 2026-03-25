@@ -130,7 +130,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         let bird = birds[indexPath.row]
         let detailVC = BirdDetailViewController(bird: bird)
         
-        // set the delegate when pushing
+        // TODO: 4. set the delegate when pushing (Should get error here, 5. fixes it)
         
         navigationController?.pushViewController(detailVC, animated: true)
         
@@ -138,4 +138,4 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 
-// conform to he protocol
+// TODO: 5. Conform to he protocol

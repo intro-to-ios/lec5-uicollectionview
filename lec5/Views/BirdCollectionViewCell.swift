@@ -7,6 +7,7 @@
 
 import UIKit
 
+// TODO: 6. Add heart icon to the cell
 // NOTE: `UICollectionViewCell` instead of `UITableViewCell`
 class BirdCollectionViewCell: UICollectionViewCell {
     

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// TODO: 2. Build this VC!
 class BirdDetailViewController: UIViewController {
     
     // MARK: - Properties (view)

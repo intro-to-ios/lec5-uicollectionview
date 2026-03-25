@@ -13,6 +13,6 @@ struct Bird {
     let name: String
     let image: String
     
-    // TODO: make variable to store favorite toggle
+    // TODO: 1. add isFavorited
     
 }

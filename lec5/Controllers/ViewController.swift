@@ -124,6 +124,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: size, height: size)
     }
 
-    // TODO: add cell tap handling function
+    // TODO: 3. Add cell tap
 
 }
